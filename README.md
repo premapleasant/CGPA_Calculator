@@ -17,5 +17,5 @@ A responsive and mobile-friendly CGPA Calculator built using **HTML**, **CSS**, 
 
 ## 🔗 Live Demo
 
-👉 [Check out the live app here](https://aadhiprince.github.io/CGPA-Calculator/)
+👉 [Check out the live app here](https://premapleasant.github.io/CGPA_Calculator/)
 
