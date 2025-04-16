@@ -1,0 +1,166 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+h1.title {
+    text-align: center;
+}
+
+#app-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    width: 20%; /* Allow buttons to wrap */
+}
+
+button {
+    flex: 1; /* Ensure buttons take equal width */
+    padding: 8px; /* Add padding */
+    background-color: #508ddd; /* Changed button color */
+    color: rgb(15, 10, 10);
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Ensure consistent font size */
+    margin: 5px; /* Add margin between buttons */
+    border-radius: 5px; /* Add border radius */
+    text-align: center; /* Center text */
+}
+
+button:hover {
+    background-color: #7e858d; /* Changed hover color */
+}
+
+@media screen and (max-width: 600px) {
+    #app-container {
+        width: 100%; /* Ensure container takes full width */
+        padding: 0 5px; /* Add padding to avoid touching screen edges */
+    }
+    .table-container {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    table {
+        width: 100%; /* Ensure table takes full width */
+        min-width: unset; /* Remove minimum width */
+    }
+    th, td {
+        white-space: normal; /* Allow text to wrap */
+    }
+    input[type="text"], input[type="number"] {
+        width: calc(100% - 10px); /* Ensure input fields take full width minus padding */
+        margin: 0; /* Ensure no extra margin */
+    }
+    .button-row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 60%; /* Ensure buttons take full width */
+    }
+    .button-row button {
+        width: 48%; /* Ensure buttons take equal width */
+        margin: 5px 1%; /* Ensure consistent margin */
+        font-size: 16px; /* Ensure consistent font size */
+    }
+    #result-container h2 {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+
+    }
+}
+
+.table-container {
+    width: 100%;
+}
+#result-container > button {
+    padding: 5px 10px; /* Reduce padding */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: 1px solid #d68d8d;
+    table-layout: fixed; /* Ensure consistent column width */
+}
+
+th, td {
+    padding: 5px;
+    text-align:center;
+    border-bottom: 1px solid #ddd;
+    margin: 0; /* Ensure no extra margin */
+    word-wrap: break-word; /* Ensure text wraps within cells */
+}
+
+td:first-child {
+    width: 40px; /* Reduce width for the subject field */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="text"], input[type="number"] {
+    width: 60px; /* Reduced width for mobile */
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0; /* Ensure no extra margin */
+    border: 2px solid #000; /* Add dark border to input fields */
+}
+
+@media screen and (min-width: 601px) {
+    input[type="text"], input[type="number"] {
+        width: 80px; /* Increased width for desktop */
+        margin: 0; /* Ensure no extra margin */
+    }
+}
+
+#result-container {
+    margin-top: 10px;
+}
+#result-container > button {
+    padding: 8px;
+}
+#result-container h2 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .table-container {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    table {
+        width: 100%; /* Ensure table takes full width */
+        min-width: unset; /* Remove minimum width */
+    }
+
+    th, td {
+        white-space: normal; /* Allow text to wrap */
+    }
+
+    #result-container h2 {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+}

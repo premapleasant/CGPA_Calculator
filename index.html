@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title" style="text-align: center;">CGPA Calculator</h1>
+    <div class="table-container">
+      <table id="table" class="styled-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Credits(C)</th>
+            <th>Grade Points(G)</th>
+            <th>Credit Points(C X G)</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr>
+            <td data-label="Subject">1</td>
+            <td data-label="Credits(C)">
+              <input type="number" id="credits_1" />
+            </td>
+            <td data-label="Grade Points(G)">
+              <input type="number" id="grade_points_1" />
+            </td>
+            <td data-label="Credit Points(C X G)">
+              <input type="number" id="credit_points_1" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Subject">2</td>
+            <td data-label="Credits(C)">
+              <input type="number" id="credits_2" />
+            </td>
+            <td data-label="Grade Points(G)">
+              <input type="number" id="grade_points_2" />
+            </td>
+            <td data-label="Credit Points(C X G)">
+              <input type="number" id="credit_points_2" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Subject">3</td>
+            <td data-label="Credits(C)">
+              <input type="number" id="credits_3" />
+            </td>
+            <td data-label="Grade Points(G)">
+              <input type="number" id="grade_points_3" />
+            </td>
+            <td data-label="Credit Points(C X G)">
+              <input type="number" id="credit_points_3" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Subject">4</td>
+            <td data-label="Credits(C)">
+              <input type="number" id="credits_4" />
+            </td>
+            <td data-label="Grade Points(G)">
+              <input type="number" id="grade_points_4" />
+            </td>
+            <td data-label="Credit Points(C X G)">
+              <input type="number" id="credit_points_4" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Subject">5</td>
+            <td data-label="Credits(C)">
+              <input type="number" id="credits_5" />
+            </td>
+            <td data-label="Grade Points(G)">
+              <input type="number" id="grade_points_5" />
+            </td>
+            <td data-label="Credit Points(C X G)">
+              <input type="number" id="credit_points_5" readonly />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="button-row">
+      <button onclick="addRow()">Add Row</button>
+      <button onclick="deleteRow()">Delete Row</button>
+    </div>
+    <div class="button-row">
+      <button onclick="reset()">Reset</button>
+    </div>
+    <div id="result-container" class="button-row">
+      <button onclick="calculateGPA()">Calculate GPA</button>
+      <h2 id="gpa">GPA: 0.00</h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
